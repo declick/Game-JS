@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Quiz ma poule</title>
+</head>
+
+<body>
+
+  <!-- header start button  -->
+
+  <header class="start">
+    <div id="zombietomb"></div>
+    <button id="start_quiz">Test ta Brain</button>
+  </header>
+
+  <!-- quiz box -->
+
+  <section class="quiz_container">
+    <div class="sound-container">
+      <p>SOUND</p>
+      <img src="img/sound_on.png" alt="Sound Image" id="sound">
+    </div>
+    <div class="quiz_text">
+      <h1>Game My Quizz</h1>
+    </div>
+
+    <div class="quiz_box">
+      <div class="quiz_question"></div>
+      <div class="reponses"></div>
+    </div>
+
+    <footer>
+
+      <!-- question number & previous/next button -->
+
+      <div class="question_numero"></div>
+      <div class="buttons">
+        <button class="btn" id="previous">Précédent</button>
+        <button class="btn" id="next">Suivant</button>
+      </div>
+    </footer>
+  </section>
+
+  <!-- result box -->
+
+  <article class="result_box">
+    <div class="score"></div>
+    <button id="replay" class="btn">Re jouer au Quizz</button>
+  </article>
+
+
+
+  <script src="music.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

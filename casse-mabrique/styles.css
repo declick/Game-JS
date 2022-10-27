@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+
+    margin: 0;
+    font-family: gruppo, sans-serif;
+
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 42px rgb(230, 18, 124),
+    0 0 77px rgb(230, 18, 124),
+    0 0 100px rgb(230, 18, 124)
+}
+
+.game {
+    background: url("https://thumbs.gfycat.com/BasicWeightyFeline-size_restricted.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-over {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    /*top: 200px;*/
+    width: 250px;
+    height: 300px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#you-won {
+    width: 160px;
+}
+
+#you-lose {
+    width: 160px;
+}
+
+#restart {
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1.5;
+    border: 1px solid #6198d8;
+    border-radius: 4px;
+    text-align: center;
+    transition: .1s ease-in-out;
+}
+
+#restart:hover {
+    background-color: #6198d8;
+}
+
+.sound-container {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    text-align: center;
+    color: white;
+}
+
+.sound-container img {
+    width: 40px;
+    height: auto;
+    transition: .1s ease-in-out;
+
+}
+
+#sound:hover {
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, .5);
+}
+
+#canvas {
+    background: url("http://res.cloudinary.com/dw2liwt16/image/upload/v1508385546/Summer_Pignic_Space_Background_l1covo.png");
+    background-size: cover;
+    display: block;
+
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: gruppo, sans-serif;
+    transition: background-color .1s ease-in;
+}
+
+.btn:hover {
+    background-color: #376599;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.rules-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.rules {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #6198d8;
+    color: #fff;
+    width: 400px;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in, opacity .3s ease-in;
+    z-index: 2;
+}
+
+.rules.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rules p {
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
