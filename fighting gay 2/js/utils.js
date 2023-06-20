@@ -74,7 +74,7 @@ function determineWinner({player, enemy, timerID}) {
 
         
         play_again.addEventListener('click',()=>{
-            window.location= 'theLastOne.html';
+            window.location= 'fightingGay2.html';
         })
     
         exit_btn.addEventListener('click',()=>{
