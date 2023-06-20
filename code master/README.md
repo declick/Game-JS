@@ -1,11 +1,11 @@
-Probemes à résoudre :
+Problemes à résoudre :
 
-- Resoudre probleme de connection
+- Resoudre le probleme de connection des joueurs
 
-- Sauvgarder les points et les etoiles
+- Sauvgarder les points et les etoiles du joueurs
 
-- voir le reste du temps jusqu'a la prochaine etoiles + s'assurer que le reset fonctionne correctement
+- Faire marcher le compte à rebours jusqu'à la prochaine etoiles + s'assurer que le reset fonctionne correctement
 
-- Afficher le score global du joueur et son nom ou ID
+- Afficher le score global du joueur et son nom ou ID en haut
 
-- tableau des 100 meilleurs scores du jeux en fin de partie 
+- Faire un tableau des 100 meilleurs scores du jeux ( en fin de partie par exemple )
