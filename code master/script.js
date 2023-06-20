@@ -1,3 +1,13 @@
+function onSignIn(googleUser) {
+  // Récupérez les informations de l'utilisateur connecté
+  const profile = googleUser.getBasicProfile();
+  const idToken = googleUser.getAuthResponse().id_token;
+
+  // Utilisez les informations et le jeton d'identification pour gérer l'authentification dans votre jeu
+  // Envoyez le jeton d'identification au serveur pour vérification, en utilisant une API backend par exemple
+}
+
+
 const questions = [
   {
     question: "Quelle est la capitale de l'Australie ?",
@@ -9,6 +19,7 @@ const questions = [
   },
   // Ajoutez d'autres questions ici
 ];
+
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -89,6 +100,7 @@ function endQuiz() {
   restartButton.style.display = "block";
 
   gameStarted = false;
+
 }
 
 function restartQuiz() {
@@ -110,6 +122,7 @@ function restartQuiz() {
   restartButton.style.display = "none";
 
   updateStars();
+
 }
 
 function updateStars() {

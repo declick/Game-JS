@@ -32,3 +32,36 @@ button {
   opacity: 0.5; /* Opacité réduite pour indiquer le bouton désactivé */
   pointer-events: none; /* Désactiver les événements du curseur sur le bouton */
 }
+
+/* center all box  */
+
+#zombietomb {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+
+}
+
+.start,
+.quiz_container,
+.result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 15px 15px 24px #7e7a74, -15px -15px 20px #7e7a74;
+}
+
+/* start button  */
+
+.start #start_quiz {
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--start_quiz-c);
+    font-size: 2rem;
+    cursor: pointer;
+}
