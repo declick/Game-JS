@@ -1,0 +1,35 @@
+#grid-container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.cell {
+  background-color: #ccc;
+  border: 1px solid #999;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.flagged {
+  background-color: #f00;
+  color: #fff;
+}
+
+.bomb {
+  background-image: url('bomb.jpg');
+  background-size: cover;
+}
+/* style.css */
+.cell.bomb {
+  background-image: url('bomb.jpg');
+}
+
+.cell.flagged {
+  background-image: url('flag.png');
+}
