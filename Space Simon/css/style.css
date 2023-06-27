@@ -1,3 +1,9 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 canvas {
     position: relative;
     width: 100%;
@@ -20,6 +26,5 @@ canvas {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #FF0000;
     /* Ajoutez ici les propriétés CSS supplémentaires pour personnaliser l'apparence des obstacles */
 }

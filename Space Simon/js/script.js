@@ -6,6 +6,10 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Charger l'image de fond d'écran
+const backgroundImage = new Image();
+backgroundImage.src = './img/space.png';
+
 // Définissez les variables pour le vaisseau spatial
 const shipWidth = 50;
 const shipHeight = 50;
@@ -63,6 +67,11 @@ function drawBullets() {
   }
 }
 
+// Fonction pour dessiner le fond d'écran
+function drawBackground() {
+  ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+}
+
 // Fonction pour effacer le canvas
 function clearCanvas() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -71,6 +80,7 @@ function clearCanvas() {
 // Fonction pour mettre à jour le jeu
 function updateGame() {
   clearCanvas();
+  drawBackground();
   drawShip();
   drawObstacles();
   drawBullets();
@@ -79,6 +89,7 @@ function updateGame() {
   moveBullets();
   drawLives();
   drawScore();
+  
 
   if (gameStarted) {
     requestAnimationFrame(updateGame);
