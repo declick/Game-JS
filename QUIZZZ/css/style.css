@@ -1,0 +1,35 @@
+#loading-screen {
+  /* Styles pour l'écran de chargement */
+  /* ... */
+}
+
+#logo {
+  /* Styles pour le logo */
+  /* ... */
+}
+
+#menu-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.menu-item {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* Ajoutez ici les styles appropriés pour les éléments du menu */
+}
+
+#game-board {
+  /* Styles pour le plateau de jeu */
+  /* ... */
+}

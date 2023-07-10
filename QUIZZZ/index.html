@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="logo">
+        <!-- Contenu du logo -->
+    </div>
+    <div id="menu-screen">
+      <div class="menu-item" onclick="startGame(1, 3)">Niveau 1 / Mot de 3 lettres</div>
+      <div class="menu-item" onclick="startGame(2, 4)">Niveau 2 / Mot de 4 lettres</div>
+      <div class="menu-item" onclick="startGame(3, 5)">Niveau 3 / Mot de 5 lettres</div>
+      <div class="menu-item" onclick="startGame(4, 6)">Niveau 4 / Mot de 6 lettres</div>
+      <div class="menu-item" onclick="startGame(5, 7)">Niveau 5 / Mot de 7 lettres</div>
+  </div>
+    <div id="game-board">
+        <div id="word-container"></div>
+        <div id="letters-container"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
